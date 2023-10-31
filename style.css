@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.828);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background-color: skyblue;
+}
+
+header > h1 {
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header > p {
+    margin-top: 5px;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+
+main > article > h2 {
+    padding-top: 15px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+main > article > p {
+    padding: 10px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+strong {
+    color: rgb(0, 168, 0);
+}
+
+main div#imagem > p {
+    margin-left: 10px;
+    color: white;
+}
+
+main div#imagem {
+    display: block;
+    background: #5f2c82 url('lutero.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+.destaque {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: lightgreen;
+}

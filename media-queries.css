@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* -- Typical Devices Breakpoints 
+----------------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+----------------------------------
+*/
+
+@media print {
+    main {
+        color: black;
+        padding-bottom: 3px;
+        width: 950px;
+        font-size: 1.3em;
+    }
+
+    header {
+        width: 950px;
+        padding-bottom: 2px;
+    }
+
+    header > div#imagem {
+        display: none;
+    }
+
+    header::before {
+        content: 'Site Original: https://thestemy.github.io/somente-a-fe/\n';
+    }
+
+    footer, aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    main div#imagem {
+        width: 300px;
+        margin: auto;
+    }    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main {
+        margin: auto;
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        margin: auto;
+        width: 700px;
+    }
+}
